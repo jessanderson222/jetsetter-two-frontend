@@ -3,11 +3,15 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./LandingPage";
 import CreateAccount from "./CreateAccount";
+import NavBar from "./NavBar";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <header classname="appHeader">
+          <NavBar />
+        </header>
         <Switch>
           <Route path="/createaccount" render={() => <CreateAccount />} />
           <Route path="/" render={() => <LandingPage />} />
