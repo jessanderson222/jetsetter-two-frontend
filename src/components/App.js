@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header classname="appHeader">
+        <header className="appHeader">
           <NavBar />
         </header>
         <Switch>
